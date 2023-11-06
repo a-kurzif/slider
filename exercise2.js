@@ -1,20 +1,36 @@
-let x = 'ЖОПА'
-let type = typeof(x)
-console.log(type)
+let isPrime = true
 
-switch(type) {
-    case 'number':
-    console.log('Тип - число');
-    break;
+function primeNumbers(num) {
 
-    case 'string':
-    console.log('Тип - строка');
-    break;
-
-    case 'boolean':
-    console.log('Тип - логический');
-    break;
-    
-    default:
-    console.log('Тип не определён');
+if (num == 1 || num == 0) {
+    console.log('Единица и ноль - исключение')
 }
+
+else {
+
+if (num <= 1000) {
+    for (let i = 2; i < num; i++) {
+        if (num % i == 0) {
+        isPrime = false
+        }
+}
+
+
+if (isPrime) {
+    console.log(`${num} - Число простое`)
+}
+else {
+    console.log(`${num} - Число не простое`)
+}
+
+}
+
+else {
+    console.log('Введено число больше 1000')
+}
+
+} 
+
+}
+
+primeNumbers(0)

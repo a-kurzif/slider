@@ -1,6 +1,2 @@
-let fruits = ["Яблоко", "Апельсин", "Слива", "Банан", "Груша", "Виноград", "Арбуз", "Дыня"]
-console.log('Количество элементов массива - '+ fruits.length)
-
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i])
-}
+const power = (x, n) => console.log(`${x} в степени ${n} = `+ Math.pow(x, n))
+power(22, 2)
