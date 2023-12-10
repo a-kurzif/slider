@@ -1,7 +1,6 @@
-function sum(x) {
-    return function(y) {
-        return x + y;
-    };
+function createObj() {
+    const obj = Object.create(null)
+    console.log(obj)
 }
 
-console.log(sum(22)(10));
+createObj()
